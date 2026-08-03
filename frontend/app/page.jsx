@@ -108,7 +108,10 @@ export default function DocumentUpload() {
 
     const xhr = new XMLHttpRequest();
     xhrRef.current = xhr;
-    xhr.open("POST", "/api/documents/upload");
+    xhr.open(
+      "POST",
+      "http://127.0.0.1:8000/api/documents/upload"
+    );
 
     xhr.upload.onprogress = (e) => {
       if (e.lengthComputable) {
