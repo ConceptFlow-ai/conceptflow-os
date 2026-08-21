@@ -37,3 +37,6 @@ dist/
 
 # Logs
 *.log
+
+# Locally uploaded documents and their extracted chunks
+data/
