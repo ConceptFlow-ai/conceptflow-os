@@ -1,0 +1,42 @@
+# Virtual Environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
+
+# TensorBoard
+runs/
+
+# Models
+models/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Locally uploaded documents and their extracted chunks
+data/

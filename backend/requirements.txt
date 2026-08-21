@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-dotenv
+psycopg2-binary
+python-multipart
+PyMuPDF>=1.24,<2.0
