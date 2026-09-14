@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111114;
+  --foreground: #f7f7f8;
+  --card: #18181c;
+  --secondary: #1e1e23;
+  --border: #303039;
+  --muted-foreground: #858591;
+  --brand: #8b5cf6;
 }
 
 @theme inline {
@@ -12,15 +17,33 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
+
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-sidebar { background-color: #0d0d10; }
+.border-border { border-color: var(--border); }
+.text-foreground { color: var(--foreground); }
+.text-muted-foreground, .text-sidebar-muted, .text-composer-muted { color: var(--muted-foreground); }
+.text-sidebar-foreground { color: var(--foreground); }
+.bg-sidebar-accent { background-color: #25252c; }
+.text-brand, .bg-brand { color: var(--brand); }
+.bg-brand { background-color: var(--brand); }
+.hover\:bg-brand-hover:hover { background-color: #a78bfa; }
+.text-primary-foreground { color: white; }
+.text-disclaimer { color: #555560; }
+.concept-composer { filter: drop-shadow(0 14px 18px rgb(0 0 0 / 52%)); }
+.concept-mark { position: relative; width: 32px; height: 32px; flex: 0 0 32px; border-radius: 9px; background: var(--brand); }
+.concept-node { position: absolute; z-index: 2; width: 5px; height: 5px; border: 1.5px solid white; border-radius: 50%; }
+.concept-node-a { left: 9px; top: 14px; }
+.concept-node-b { left: 17px; top: 7px; }
+.concept-node-c { left: 19px; top: 20px; }
+.concept-mark-line { position: absolute; z-index: 1; left: 11px; width: 11px; height: 1.5px; background: white; transform-origin: left center; }
+.concept-mark-line-a { top: 15px; transform: rotate(-40deg); }
+.concept-mark-line-b { top: 16px; transform: rotate(35deg); }
